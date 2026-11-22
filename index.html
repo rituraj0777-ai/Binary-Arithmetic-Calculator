@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>BinaryCalc</h2>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#converter">Converter</a>
+        <a href="#history-section">history</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <h1>Binary Arithmetic Calculator</h1>
+
+    <p>
+        Perform Binary Addition, Subtraction,
+        Multiplication and Division Easily.
+    </p>
+
+    <p>
+        Learn Binary Number System with
+        Simple Calculations and Conversions.
+    </p>
+
+    <a href="#calculator" class="start-btn">
+        Start Calculating
+    </a>
+</section>
+
+<!-- Binary Calculator -->
+<section id="calculator">
+    <h1>Binary Arithmetic Calculator</h1>
+    <p>Perform Binary Arithmetic Operations</p>
+
+    <div class="calculator">
+
+        <input type="text" id="num1"
+        placeholder="Enter First Binary Number">
+
+        <input type="text" id="num2"
+        placeholder="Enter Second Binary Number">
+
+        <div class="button-group">
+            <button onclick="calculate('+')">Addition</button>
+            <button onclick="calculate('-')">Subtraction</button>
+            <button onclick="calculate('*')">Multiplication</button>
+            <button onclick="calculate('/')">Division</button>
+        </div>
+
+        <h2 id="result">Result will appear here</h2>
+
+        <button onclick="clearCalculator()">Clear Inputs</button>
+
+    </div>
+</section>
+
+<!-- Converters -->
+<section id="converter">
+    <h1>Number System Converter</h1>
+
+    <div class="calculator">
+        <h2>Binary to Decimal Converter</h2>
+
+        <input type="text" id="binaryInput"
+        placeholder="Enter Binary Number">
+
+        <button onclick="convertToDecimal()">
+            Convert to Decimal
+        </button>
+
+        <h2 id="conversionResult">Conversion Result</h2>
+    </div>
+
+    <div class="calculator">
+        <h2>Decimal to Binary Converter</h2>
+
+        <input type="number" id="decimalInput"
+        placeholder="Enter Decimal Number">
+
+        <button onclick="convertToBinary()">
+            Convert to Binary
+        </button>
+
+        <h2 id="binaryResult">Conversion Result</h2>
+    </div>
+</section>
+
+<!-- Calculation History -->
+<section id="history-section">
+    <div class="calculator history-box">
+
+        <h2 class="history-title">
+            Calculation History
+        </h2>
+
+        <button onclick="clearHistory()" class="clear-btn">
+            Clear History
+        </button>
+
+        <ul id="history"></ul>
+
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about-section">
+
+    <h2>About BinaryCalc</h2>
+
+    <p>
+        BinaryCalc is a simple and user-friendly
+        Binary Arithmetic Calculator.
+    </p>
+
+    <p>
+        It helps students understand binary number
+        calculations and number system conversions.
+    </p>
+
+    <h3>Features</h3>
+
+    <ul>
+        <li>Binary Addition</li>
+        <li>Binary Subtraction</li>
+        <li>Binary Multiplication</li>
+        <li>Binary Division</li>
+        <li>Binary to Decimal Conversion</li>
+        <li>Decimal to Binary Conversion</li>
+        <li>Calculation History</li>
+    </ul>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <h2>BinaryCalc</h2>
+    <p>Learn Binary. Calculate Easily.</p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#converter">Converter</a>
+        <a href="#about">About</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 BinaryCalc. All Rights Reserved.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
